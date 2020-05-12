@@ -5,22 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bradford Wilson</title>
     <link rel="styleguide" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="styleguid" href="styles.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header><h1>Bradford Wilson.</h1></header>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="#"><h1><img src="images/branding.svg" alt="Bradford Wilson"></h1></a>
+            </div>
+            <nav class="main-menu">
+                <a href ="#about">about</a>
+                <a href ="#portfolio">work</a>
+                <a href ="#contact">contact</a>
+            </nav>
+        </div>
+    </header>
     <main>
         <article id="home">
             <p></p>
-            <p>I am a thinker, creator and developer located in New York City. I have a passion for strategy and I love devloping crafty solutions to complicated problems.</p>
+            <p>I am a thinker, creator and <strong>developer</strong> located in <strong>New York City</strong>. I have a passion for strategy and I love devloping crafty solutions to complicated problems.</p>
         </article>
 
-        <hr>
+        <hr class = "home">
 
         <article id="about">
             <h2>About Myself</h2>
-            <p>My journey to code was long but certain. I started as an enthusiastic entrepreneur during college. My business in Colorado was fun but not sustainable so I quit my painting business early on. From entrepreneurship I started to work for wells fargo. Finances were always fascinating to me and during 7 years I built my way up from loan underwriter to ehm..hard to describe. Today I implement new software solutions for a credit union at long island. I work on software conversion projects, managing transitions with vendors, and and configure connectivity between new and existing systems utilizing vendor software APIs. While building my career I built a very strong passion for code and after work I started studying algorithms and the react framework. And frankly I spend too much time with code and my marriage is at risk. I am excited to land a new fresh career where I can bring my experiences and excitement. I am looking for a team of great thinkers and humans who would like to go for happy hour sometimes and talk about code. </p>
-            <h3>What I can do</h3>
+            <div class="paragroup">
+                <p>My journey to code was long but certain. I started as an enthusiastic entrepreneur during college. My business in Colorado was fun but not sustainable so I quit my painting business early on. From entrepreneurship I started to work for wells fargo. Finances were always fascinating to me and during 7 years I built my way up from loan underwriter to ehm..hard to describe.</p>
+                <p>Today I implement new software solutions for a credit union at long island. I work on software conversion projects, managing transitions with vendors, and and configure connectivity between new and existing systems utilizing vendor software APIs. While building my career I built a very strong passion for code and after work I started studying algorithms and the react framework. And frankly I spend too much time with code and my marriage is at risk.</p> 
+                <p>I am excited to land a new fresh career where I can bring my experiences and excitement. I am looking for a team of great thinkers and humans who would like to go for happy hour sometimes and talk about code. </p>
+            </div>
+                <h3>What I can do</h3>
             <ul>
                 <li>Interactive client-side web applications</li>
                 <li>Server-side JavaScript applications using Node and Express</li>  
@@ -33,54 +48,78 @@
         <article id="portfolio">
             <h2>Work</h2>
 
-            <section>
-                <h3>Title of the project</h3>
-                <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
-                <ul>
-                    <li>Stack Skill 1</li>
-                    <li>Stack Skill 2</li>
-                    <li>Stack Skill 3</li>
-                </ul>
-                <img href="#" alt="Screenshot that presents the app appropriately"> 
-                <a href="#">GitHub</a>
-                <a href="#">Live App</a>
-            </section>
-            
-            <section>
-                <h3>Title of the project</h3>
-                <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
-                <ul>
-                    <li>Stack Skill 1</li>
-                    <li>Stack Skill 2</li>
-                    <li>Stack Skill 3</li>
-                </ul>
-                <img href="#" alt="Screenshot that presents the app appropriately"> 
-                <a href="#">GitHub</a>
-                <a href="#">Live App</a>
-            </section>
+            <div class="project-container">
+                <section class="project">
+                    <h3 class="accent-1">Title of the project</h3>
+                    <div class="paragroup">
+                        <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
+                    </div>
+                    <ul>
+                        <li>Stack Skill 1</li>
+                        <li>Stack Skill 2</li>
+                        <li>Stack Skill 3</li>
+                    </ul>
+                    <img src="images/app.png" alt="My Excellent App"> 
+                    <div>
+                        <a class="btn btn-sm btn-accent-3" href="#">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="btn btn-lg btn-accent-4" href="#">Live App</a>
+                    </div>
+                </section>
+                
+                <section class="project">
+                    <h3 class="accent-1">Title of the project</h3>
+                    <div class="paragroup">
+                        <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
+                    </div>
+                    <ul>
+                        <li>Stack Skill 1</li>
+                        <li>Stack Skill 2</li>
+                        <li>Stack Skill 3</li>
+                    </ul>
+                    <img src="images/app.png" alt="My Excellent App"> 
+                    <div>
+                        <a class="btn btn-sm btn-accent-3" href="#">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="btn btn-lg btn-accent-4" href="#">Live App</a>
+                    </div>
+                </section>
 
-            <section>
-                <h3>Title of the project</h3>
-                <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
-                <ul>
-                    <li>Stack Skill 1</li>
-                    <li>Stack Skill 2</li>
-                    <li>Stack Skill 3</li>
-                </ul>
-                <img href="#" alt="Screenshot that presents the app appropriately"> 
-                <a href="#">GitHub</a>
-                <a href="#">Live App</a>
-            </section>
-
+                <section class="project">
+                    <h3 class="accent-1">Title of the project</h3>
+                    <div class="paragroup">
+                        <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
+                    </div>
+                    <ul>
+                        <li>Stack Skill 1</li>
+                        <li>Stack Skill 2</li>
+                        <li>Stack Skill 3</li>
+                    </ul>
+                    <img src="images/app.png" alt="My Excellent App"> 
+                    <div>
+                        <a class="btn btn-sm btn-accent-3" href="#">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="btn btn-lg btn-accent-4" href="#">Live App</a>
+                    </div>
+                </section>
+            </div>
         </article>
 
         <hr>
 
         <article id="contact">
             <h2>Reach out!</h2>
-            <a href="mailto:bradford.dean.wilson@gmail.com">bradford.dean.wilson@gmail.com</a>
-            <a href="#" id="linked-in">LinkedIn</a>
-            <a href="#" id="github">GitHub</a>
+            <div class="center email">
+                <a class="emphasis accent-2" href="mailto:bradford.dean.wilson@gmail.com">bradford.dean.wilson@gmail.com</a>
+                <button class="btn-md btn-accent-1">Copy</button>
+            </div>
+            <div class="center social">
+                <a class="emphasis" href="https://www.linkedin.com/in/bradford-wilson-26842763" id="linked-in">LinkedIn</a>
+                <a class="emphasis" href="https://github.com/bradforddean1" id="github">GitHub</a>
+            </div>
         </article>
           
     </main>

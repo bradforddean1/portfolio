@@ -1,1 +1,240 @@
-#
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Typo */
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+}
+
+button {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.emphasis {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a, button {
+    text-decoration: none;
+}
+
+nav > a {
+    text-align: right;
+}
+
+/* Color Scheme */
+
+body {
+    background: #03000D;
+    color: #fff; /* Becasue not all browsers work well with rgba */
+    color: rgba(255, 255, 255, 0.87); 
+}
+
+header {
+    background: #03000D;
+}
+
+.accent-1 {
+    color: #FF00F7; /* spandex-magenta */
+}
+
+.accent-2 {
+    color: #68B1B4; /* cyber-green */
+}
+
+.accent-3 {
+    color: #FF621E; /* california-orange */
+}
+
+.accent-4 {
+    color: #00FFDA; /* cosmic-latte */
+}
+
+a {
+    color: rgba(255, 255, 255, 0.87); 
+}
+
+a.btn, button {
+    color: #03000D;
+}
+
+nav > a:hover {
+    color: #68B1B4;
+}
+
+.social a:hover {
+    color: #FF621E; /* california-orange */
+}
+
+
+/* Structure */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header .wrapper, article, footer {
+    margin: 0 32px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: +1;
+}
+
+header .wrapper { 
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 32px;
+}
+
+article {
+    padding-top: 150px; /* Push down from fixed header */
+}
+
+#contact {
+    min-height: calc(100vh - 150px); /* Subtract article padding */
+}
+
+article > p {
+    width: calc(50% - 32px);
+}
+
+h2, h3, .paragroup {
+    margin: 0 0 56px 0;    
+}
+
+.project {
+    width: 400px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project img {    
+    width: 400px;
+    margin: 64px 0 24px 0;
+}
+
+.project h3 {
+    text-align: center
+}
+
+.email {
+    margin: 150px 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center a, .center button {
+    margin: 8px;
+}
+
+
+/* Rulers */
+
+hr {
+    background-image: url("images/hr.svg");
+    background-repeat: none;
+    width: 89%;
+    height:44px;
+    text-align: right;
+    margin: 120px 0 50px auto;
+    border: none;
+}
+
+hr.home {
+    background-image: url("images/hr-big.svg");
+    height:86px;
+    margin-top: 0px;
+}
+
+/* Buttons */
+
+a.btn, button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 16px 0px;
+    padding: 16px 0px;
+    border: none;
+}
+
+.btn-sm {
+    width: 88px;
+}
+
+.btn-md {
+    width: 144px;
+}
+
+.btn-lg {
+    width: 288px;
+}
+
+.btn::after, button::after {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 100%;
+    top: 8px;
+    left: 6px;
+    z-index: -1;
+    border: 3px solid;
+}
+
+.btn-accent-1 {
+    background-color: #FF00F7; /* spandex-magenta */
+}
+
+.btn-accent-1::after {
+    border-color: #FF00F7; /* spandex-magenta */
+}
+
+.btn-accent-3 {
+    background-color: #FF621E; /* california-orange */
+}
+
+.btn-accent-3::after {
+    border-color: #FF621E; /* california-orange */
+}
+
+.btn-accent-4 {
+    background-color: #00FFDA; /* california-orange */
+}
+
+.btn-accent-4::after {
+    border-color: #00FFDA; /* california-orange */
+}
+
+
