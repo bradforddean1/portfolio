@@ -23,8 +23,15 @@ h3 {
 }
 
 .emphasis {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
+}
+
+@media all and (min-width: 500px) {
+    .emphasis{
+        font-size: 24px;
+    } 
+
 }
 
 a, button {
@@ -86,10 +93,6 @@ body {
     padding: 0;
 }
 
-header .wrapper, article, footer {
-    margin: 0 32px;
-}
-
 header {
     position: fixed;
     top: 0;
@@ -97,7 +100,39 @@ header {
     z-index: +1;
 }
 
-header .wrapper { 
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.container { 
+    display: flex;
+    flex-direction: column;
+}
+
+.block {
+    flex: 1;
+    margin-bottom: 120px;
+
+}
+
+.empty-block {
+    flex: 1;
+}
+
+@media all and (min-width: 1080px) {
+    
+    #about .container, #home .container {
+        flex-direction: row;
+    }
+
+    .empty-block {
+        flex: 1;
+    }
+}
+
+.header-group {
     display: flex;
     justify-content: space-between;
     padding: 16px 0;
@@ -117,64 +152,82 @@ article {
     min-height: calc(100vh - 150px); /* Subtract article padding */
 }
 
-article > p {
-    width: calc(50% - 32px);
-}
-
 h2, h3, .paragroup {
     margin: 0 0 56px 0;    
 }
 
-.project {
-    width: 400px;
+#portfolio .container {
+    align-items: center;
 }
 
-.project-container {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+.project {
+    flex: 1;
+    max-width: 520px;
+    margin: 0 3% 120px 3%;
 }
 
 .project img {    
-    width: 400px;
+    width: 100%;
     margin: 64px 0 24px 0;
 }
 
 .project h3 {
-    text-align: center
-}
-
-.email {
-    margin: 150px 0;
+    text-align: center;
 }
 
 .center {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: left;
 }
 
 .center a, .center button {
     margin: 8px;
 }
 
+.social {
+    flex-direction: column;
+}
 
+@media all and (min-width: 1080px) {
+
+    #portfolio .container {
+        flex-direction: row;
+    }
+}
+
+@media all and (min-width: 500px) {
+
+    .email {
+        margin: 150px 0;
+    }
+
+    .center {
+            justify-content: center;
+            align-items: center;
+    }
+
+    .social {
+        flex-direction: row;
+    }
+}
 /* Rulers */
 
 hr {
+    position: absolute;
+    right: 0;
     background-image: url("images/hr.svg");
     background-repeat: none;
     width: 89%;
     height:44px;
     text-align: right;
-    margin: 120px 0 50px auto;
+    margin-right: auto;
     border: none;
 }
 
 hr.home {
     background-image: url("images/hr-big.svg");
     height:86px;
-    margin-top: 0px;
+    margin-top: -120px;
 }
 
 /* Buttons */
@@ -197,7 +250,7 @@ a.btn, button {
 }
 
 .btn-lg {
-    width: 288px;
+    width: calc(100% - 102px); /*288px*/
 }
 
 .btn::after, button::after {
