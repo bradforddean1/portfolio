@@ -4,124 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bradford Wilson</title>
-    <link rel="styleguide" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="styleguide" href="reset.css"/>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <div class="logo">
-                <a href="#"><h1><img src="images/branding.svg" alt="Bradford Wilson"></h1></a>
+            <div class="header-group">
+                <div class="logo">
+                    <a href="#"><h1><img src="images/branding.svg" alt="Bradford Wilson"></h1></a>
+                </div>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href ="#about">about</a></li>
+                        <li><a href ="#portfolio">work</a></li>
+                        <li><a href ="#contact">contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="main-menu">
-                <a href ="#about">about</a>
-                <a href ="#portfolio">work</a>
-                <a href ="#contact">contact</a>
-            </nav>
         </div>
+        
     </header>
-    <main>
-        <article id="home">
-            <p></p>
-            <p>I am a thinker, creator and <strong>developer</strong> located in <strong>New York City</strong>. I have a passion for strategy and I love devloping crafty solutions to complicated problems.</p>
-        </article>
-
-        <hr class = "home">
-
-        <article id="about">
-            <h2>About Myself</h2>
-            <div class="paragroup">
-                <p>My journey to code was long but certain. I started as an enthusiastic entrepreneur during college. My business in Colorado was fun but not sustainable so I quit my painting business early on. From entrepreneurship I started to work for Wells Fargo. Finances were always fascinating to me and during 7 years I built my way up from loan underwriter to ehm..hard to describe.</p>
-                <p>Today I implement new software solutions for a credit union at Long Island. I work on software conversion projects, managing transitions with vendors, and configure connectivity between new and existing systems utilizing vendor software APIs. While building my career I built a very strong passion for code and after work I started studying algorithms and the React framework. And frankly I spend too much time with code and my marriage is at risk.</p> 
-                <p>I am excited to land a new fresh career where I can bring my experiences and excitement. I am looking for a team of great thinkers and humans who would like to go for happy hour sometimes and talk about code. </p>
-            </div>
-                <h3>What I can do</h3>
-            <ul>
-                <li>Interactive client-side web applications</li>
-                <li>Server-side JavaScript applications using Node and Express</li>  
-                <li>One page web apps with React-JS.</li>
-            </ul>
-        </article>
-
-        <hr>
-
-        <article id="portfolio">
-            <h2>Work</h2>
-
-            <div class="project-container">
-                <section class="project">
-                    <h3 class="accent-1">Title of the project</h3>
-                    <div class="paragroup">
-                        <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
+    <div class="wrapper">
+        <main>
+            <article id="home">
+                <div class="container">
+                    <div class="block">
+                        <p>I am a thinker, creator and <strong>developer</strong> located in <strong>New York City</strong>. I have a passion for strategy and I love devloping crafty solutions to complicated problems.</p>
                     </div>
-                    <ul>
-                        <li>Stack Skill 1</li>
-                        <li>Stack Skill 2</li>
-                        <li>Stack Skill 3</li>
-                    </ul>
-                    <img src="images/app.png" alt="My Excellent App"> 
-                    <div>
-                        <a class="btn btn-sm btn-accent-3" target="_blank" href="#">
-                            <span>GitHub</span>
-                        </a>
-                        <a class="btn btn-lg btn-accent-4" target="_blank" href="#">Live App</a>
+                    <div class="empty-block"></div>
+                </div>
+            </article>
+    
+            <div class="rule-container"><hr class = "hr-home"/></div>
+    
+            <article id="about">
+                <div class="container">
+                    <div class="block">
+                        <h2>About Myself</h2>
+                        <div class="paragroup">
+                            <p>My journey to code was long but certain. I started as an enthusiastic entrepreneur during college. My business in Colorado was fun but not sustainable so I quit my painting business early on. From entrepreneurship I started to work for Wells Fargo. Finances were always fascinating to me and during 7 years I built my way up from loan underwriter to ehm..hard to describe.</p>
+                            <p>Today I implement new software solutions for a credit union at Long Island. I work on software conversion projects, managing transitions with vendors, and configure connectivity between new and existing systems utilizing vendor software APIs. While building my career I built a very strong passion for code and after work I started studying algorithms and the React framework. And frankly I spend too much time with code and my marriage is at risk.</p> 
+                            <p>I am excited to land a new fresh career where I can bring my experiences and excitement. I am looking for a team of great thinkers and humans who would like to go for happy hour sometimes and talk about code. </p>
+                        </div>
+                            <h3>What I can do</h3>
+                        <ul>
+                            <li>Interactive client-side web applications</li>
+                            <li>Server-side JavaScript applications using Node and Express</li>  
+                            <li>One page web apps with React-JS.</li>
+                        </ul>
                     </div>
-                </section>
+                    <div class="empty-block">
+                        <!-- Future Profile Photo -->
+                    </div>
+                </div>
+            </article>
+            
+            <div class="rule-container"><hr/></div>
+            
+    
+            <article id="portfolio">
+                <h2>Work</h2>
+    
+                <div class="container">
+                    <section class="project">
+                        <h3 class="accent-1">Title of the project</h3>
+                        <div class="paragroup">
+                            <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
+                        </div>
+                        <ul>
+                            <li>Stack Skill 1</li>
+                            <li>Stack Skill 2</li>
+                            <li>Stack Skill 3</li>
+                        </ul>
+                        <img src="images/app.png" alt="My Excellent App"> 
+                        <div>
+                            <a class="btn btn-sm btn-accent-3" target="_blank" href="#">
+                                <span>GitHub</span>
+                            </a>
+                            <a class="btn btn-lg btn-accent-4" target="_blank" href="#">Live App</a>
+                        </div>
+                    </section>
+                    
+                    <section class="project">
+                        <div class="project-sect">
+                            <h3 class="accent-1">Title of the project</h3>
+                            <div class="paragroup">
+                                <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
+                            </div>
+                            <ul>
+                                <li>Stack Skill 1</li>
+                                <li>Stack Skill 2</li>
+                                <li>Stack Skill 3</li>
+                            </ul>
+                        </div>
+                        <div class="project-sect">
+                            <img src="images/app.png" alt="My Excellent App"> 
+                            <div>
+                                <a class="btn btn-sm btn-accent-3" target="_blank" href="#">
+                                    <span>GitHub</span>
+                                </a>
+                                <a class="btn btn-lg btn-accent-4" target="_blank" href="#">Live App</a>
+                            </div>
+                        </div>
+                    
+    
+                    </section>
+    
+                    <section class="project">
+                        <h3 class="accent-1">Title of the project</h3>
+                        <div class="paragroup">
+                            <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
+                        </div>
+                        <ul>
+                            <li>Stack Skill 1</li>
+                            <li>Stack Skill 2</li>
+                            <li>Stack Skill 3</li>
+                        </ul>
+                        <img src="images/app.png" alt="My Excellent App"> 
+                        <div>
+                            <a class="btn btn-sm btn-accent-3" target="_blank" href="#">
+                                <span>GitHub</span>
+                            </a>
+                            <a class="btn btn-lg btn-accent-4" target="_blank" href="#">Live App</a>
+                        </div>
+                    </section>
+                </div>
+            </article>
+    
+            <div class="rule-container"><hr/></div>
+    
+            <article id="contact">
+                <h2>Reach out!</h2>
+                <div class="container">
+                    <div class="email">
+                        <a class="emphasis accent-2" href="mailto:bradford.dean.wilson@gmail.com">bradford.dean.wilson@gmail.com</a>
+                        <!-- <button class="btn-md btn-accent-1">Copy</button> -->
+                    </div>
+                    <div><hr class="hr-sm"></div>
+                    <form action="https://formspree.io/mgenoaoz" method="POST">
+                        <input id="form-name" name="name" type="text" autofoucs="on" placeholder="Your name" required>
+                        <input id="form-email" name="_replyto" type="email" placeholder="Reply email" required>
+                        <textarea id="form-message" name="message" placeholder="Type message" required></textarea>
+                        <button class="btn-accent-3 btn-md" type="submit">Submit</button>
+                    </form>
+                    <div class="social">
+                        <a class="emphasis" target="_blank" href="https://www.linkedin.com/in/bradford-wilson-26842763" id="linked-in">LinkedIn</a>
+                        <a class="emphasis" target="_blank" href="https://github.com/bradforddean1" id="github">GitHub</a>
+                    </div>
+                </div>
                 
-                <section class="project">
-                    <h3 class="accent-1">Title of the project</h3>
-                    <div class="paragroup">
-                        <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
-                    </div>
-                    <ul>
-                        <li>Stack Skill 1</li>
-                        <li>Stack Skill 2</li>
-                        <li>Stack Skill 3</li>
-                    </ul>
-                    <img src="images/app.png" alt="My Excellent App"> 
-                    <div>
-                        <a class="btn btn-sm btn-accent-3" target="_blank" href="#">
-                            <span>GitHub</span>
-                        </a>
-                        <a class="btn btn-lg btn-accent-4" target="_blank" href="#">Live App</a>
-                    </div>
-                </section>
-
-                <section class="project">
-                    <h3 class="accent-1">Title of the project</h3>
-                    <div class="paragroup">
-                        <p>Description that explains that you understand the project’s purpose, your approach to building the project and who it’s for, and what you learned from building it.</p>
-                    </div>
-                    <ul>
-                        <li>Stack Skill 1</li>
-                        <li>Stack Skill 2</li>
-                        <li>Stack Skill 3</li>
-                    </ul>
-                    <img src="images/app.png" alt="My Excellent App"> 
-                    <div>
-                        <a class="btn btn-sm btn-accent-3" target="_blank" href="#">
-                            <span>GitHub</span>
-                        </a>
-                        <a class="btn btn-lg btn-accent-4" target="_blank" href="#">Live App</a>
-                    </div>
-                </section>
-            </div>
-        </article>
-
-        <hr>
-
-        <article id="contact">
-            <h2>Reach out!</h2>
-            <div class="center email">
-                <a class="emphasis accent-2" href="mailto:bradford.dean.wilson@gmail.com">bradford.dean.wilson@gmail.com</a>
-                <button class="btn-md btn-accent-1">Copy</button>
-            </div>
-            <div class="center social">
-                <a class="emphasis" target="_blank" href="https://www.linkedin.com/in/bradford-wilson-26842763" id="linked-in">LinkedIn</a>
-                <a class="emphasis" target="_blank" href="https://github.com/bradforddean1" id="github">GitHub</a>
-            </div>
-        </article>
-          
-    </main>
+            </article>   
+        </main>
+    </div>
 </body>
 </html>
