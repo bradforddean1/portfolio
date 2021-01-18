@@ -212,12 +212,12 @@ h1 {
 
 h2,
 h3,
-.project-desc {
+.paragroup {
   margin: 0 0 56px 0;
 }
 
 @media all and (min-width: 1080px) {
-  .paragroup {
+  .project-desc {
     height: 20em;
   }
 }
