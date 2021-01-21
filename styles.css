@@ -166,8 +166,8 @@ form {
     align-items: flex-start;
   }
 
-  .empty-block {
-    flex: 1;
+  .about-right {
+    margin-bottom: 120px;
   }
 }
 
